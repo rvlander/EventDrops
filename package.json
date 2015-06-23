@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "browserify": "5.11.2",
+    "canvas": "1.2.3",
     "jsdom": "1.0.0-pre.6",
     "karma": "^0.12.36",
     "karma-firefox-launcher": "^0.1.6",
@@ -20,7 +21,7 @@
     "karma-phantomjs-launcher": "0.1.4",
     "karma-requirejs": "^0.2.2",
     "mocha": "1.21.4",
-    "requirejs": "^2.1.18",
+    "requirejs": "^2.1.18"
   },
   "bugs": {
     "url": "https://github.com/marmelab/EventDrops/issues"

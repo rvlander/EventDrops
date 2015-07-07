@@ -21,7 +21,8 @@
     "karma-phantomjs-launcher": "0.1.4",
     "karma-requirejs": "^0.2.2",
     "mocha": "1.21.4",
-    "requirejs": "^2.1.18"
+    "requirejs": "^2.1.18",
+    "watchify": "^3.2.3"
   },
   "bugs": {
     "url": "https://github.com/marmelab/EventDrops/issues"

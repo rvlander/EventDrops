@@ -41,8 +41,12 @@
 
                 var max =  Math.floor(Math.random() * 200);
                 for (var j = 0; j < max; j++) {
-                    var time = Math.floor((Math.random() * oneMonth)) + startTime;
-                    event.dates.push(new Date(time));
+                    var sTime = Math.floor((Math.random() * oneMonth)) + startTime;
+                    var eTime = sTime + Math.floor((Math.random() * oneMonth)/10);
+                    event.dates.push({
+                      start: new Date(sTime),
+                      end: new Date(eTime)
+                    });
                 }
 
                 return event;
@@ -75,7 +79,7 @@
                 .maxScale(100)
                 .locale(locale)
                 .eventColor(function (datum, index) {
-                    if (datum.getTime() < middleTime) {
+                    if (datum.start.getTime() < middleTime) {
                         return 'green';
                     }
                     return 'red';

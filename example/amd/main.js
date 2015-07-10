@@ -30,8 +30,12 @@ require(['d3', 'd3.chart.eventDrops'], function(d3) {
         // add up to 200 events
         var max =  Math.floor(Math.random() * maxNbEvents);
         for (var j = 0; j < max; j++) {
-            var time = (Math.random() * (endTime - startTime)) + startTime;
-            event.dates.push(new Date(time));
+            var sTime = (Math.random() * (endTime - startTime)) + startTime;
+            var eTime = sTime +(Math.random() * (endTime - startTime)/100);
+            event.dates.push({
+              start: new Date(sTime),
+              end: new Date(eTime)
+            });
         }
         return event;
     }
